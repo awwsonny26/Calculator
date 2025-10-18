@@ -12,5 +12,13 @@ int Calculator::Sub (double a, double b)
 
 int Calculator::Mul (double a, double b)
 {
-    return a * b + 0.5;
+	return a * b + 0.5;
+}
+
+int Calculator::Div (double a, double b) {
+	if (b == 0) {
+		std::cerr << "Error: division by zero!" << std::end
+		return 0;
+	}
+	return a / b;
 }
